@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <title>Contact Us - FlavorForge | E-Commerce Website Design</title>
+    <link rel="icon" href="Icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header-1">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FlavorForge" width="135px">
+            </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="Cart.html"><img src="Cart.png" alt="Cart" width="30px" height="30px" class="cart"></a>
+                <img src="menu.png" alt="Menu" width="25px" height="25px" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+
+    <!--Contact Page-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Spices.jpg" alt="Spices" width="100%">
+            </div>
+            <div class="col-2">
+                <h1 style="text-align: center;">Hello Spice Explorer!</h1>
+                <p>We're delighted that you're eager to get in touch with us. At FlavorForge, we value your thoughts, questions, and feedback. Whether you have a burning spice-related inquiry or just want to share your latest culinary triumph, we're here for it all. Here's how you can reach us:</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Customer Support:</h2><br>
+        <p>&nbsp; &nbsp; Got a question about an order, our products, or anything else? Our customer support team is here to help. Reach out to us at <strong><a href="">support@flavorforge.com</a></strong>, and we'll get back to you as soon as possible.</p>
+        <br>
+        <h2>Spice Suggestions:</h2><br>
+        <p>&nbsp; &nbsp; Have a spice you'd love to see in our collection? We're always on the lookout for new and exciting flavors. Drop us an email at <strong><a href="">spices@flavorforge</a></strong> with your suggestions, and we'll consider adding it to our spice family.</p>
+        <br>
+        <h2>Collaborations and Partnerships:</h2><br>
+        <p>&nbsp; Interested in collaborating with FlavorForge? Whether you're a fellow spice enthusiast, a chef, or a blogger, we'd love to explore opportunities together. Send us your proposals at <strong><a href="">partnerships@flavorforge.com</a></strong>, and let's create something amazing.</p>
+        <br>
+        <h2>General Inquiries:</h2><br>
+        <p>&nbsp; &nbsp; For all other inquiries or just to say hello, you can reach us at For all other inquiries or just to say hello, you can reach us at <strong><a href="">info@flavorforge.com</a></strong> We love hearing from our spice-loving community!</a>. We love hearing from our spice-loving community!</p>
+        <br>
+        <h2>Connect on Social Media:</h2><br>
+        <p>&nbsp; &nbsp; Stay updated on the latest spice trends, recipes, and community highlights by connecting with us on social media. Find us on <img src="facebook.png" alt="Facebook" height="15px" width="15px">, <img src="instagram.png" alt="Instagram" height="15px" width="15px">, <img src="youtube.png" alt="Youtube" height="15px" width="15px">and <img src="twitter.png" alt="Twitter" height="15px" width="15px">.</p>
+        <br>
+        <h2>Visit Us:</h2><br>
+        <p>&nbsp; &nbsp;If you're in the neighborhood, feel free to drop by our physical store at <strong>FlavorForge, 123 Spice Street, Thiruvarur.</strong> We'd love to meet you in person!</p>
+        <br>
+        <p>&nbsp; &nbsp;No matter how you choose to get in touch, we're eagerly waiting to spice up our conversation with you. Thanks for being a part of FlavorForge—where every message is as delightful as a sprinkle of your favorite spice!</p>
+    </div>
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <img src="Store.png" alt="Play Store and App store">
+                    <p>Download App for Android and ios Mobile Phones.</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png" alt="FlavorForge" width="80px">
+                    <p>Infuse life into your dishes with our exquisite blend of handcrafted spices, <br> elevating every bite to a symphony of flavors.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                        <h5><img src="facebook.png" alt="Facebook" height="15px" width="15px"> <img src="instagram.png" alt="Instagram" height="15px" width="15px"> <img src="twitter.png" alt="Twitter" height="15px" width="15px"> <img src="youtube.png" alt="Youtube" height="15px" width="15px"> </h5>
+                </div>
+            </div>
+            <hr>
+                <p class="copyright">Copyright 2023 - FlavorForge</p>
+        </div>
+    </div>
+
+    <!---JS For Toggle Menu-->
+<script>
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+<!--JS For Toggle Form-->
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(75px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+</body>
+</html>

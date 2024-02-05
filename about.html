@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" href="style.css">
+    <title>About Us - FlavorForge | E-Commerce Website Design</title>
+    <link rel="icon" href="Icon.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="header-1">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="FlavorForge" width="135px">
+            </div> 
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="Contact.html">Contact Us</a></li>
+                        <li><a href="Account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="Cart.html"><img src="Cart.png" alt="Cart" width="30px" height="30px" class="cart"></a>
+                <img src="menu.png" alt="Menu" width="25px" height="25px" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+
+    <!--About Page-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="Spices.jpg" alt="spice" width="100%" style="padding: 0px; padding-bottom: 50px;">
+            </div>
+            <div class="col-2">
+                <h1 style="text-align: center;">Welcome to FlavorForge!</h1>
+                <p>At FlavorForge, we believe in the transformative power of spices to elevate every culinary experience. Our journey began with a passion for flavor, a love for exploration, and a commitment to bringing the finest spices from around the world to your kitchen.</p><br>
+                <p style="padding-bottom: 50px;">Why spices, you ask? Because we believe that every dish has the potential to be a masterpiece, and the right blend of spices is the secret ingredient to elevate it. Whether you're a seasoned chef or someone just starting to explore the joy of cooking, we're here to be your companions in the world of taste.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Who are we?</h2><br>
+        <p>We are a team of spice enthusiasts, culinary adventurers, and flavor connoisseurs. Our mission is simple: to provide you with the highest quality, ethically sourced spices that will take your cooking to new heights. Whether you're a seasoned chef or a kitchen novice, we're here to inspire, educate, and ignite your taste buds.</p>
+        <br>
+        <h2>What sets us apart?</h2><br>
+        <p>Quality is at the heart of everything we do. We work directly with farmers and spice growers to ensure that our products meet the highest standards of freshness, purity, and authenticity. Each spice is carefully selected, handpicked, and meticulously processed to preserve its natural flavors and aromas.</p>
+        <p>Ethical sourcing is a cornerstone of our business. We are committed to supporting sustainable farming practices and fair trade. By partnering with local communities, we contribute to the well-being of farmers and their families, fostering a positive impact on both the environment and livelihoods.</p>
+        <br>
+        <h2>Our spice collection:</h2><br>
+        <p>Explore our extensive range of spices, herbs, and blends curated to enhance your culinary adventures. From the bold and smoky notes of paprika to the exotic warmth of cardamom, each spice in our collection tells a story of origin and craftsmanship.</p>
+        <br>
+        <h2>Recipes and Inspiration:</h2><br>
+        <p>Embark on a culinary journey with our curated recipes and cooking tips. Whether you're looking to spice up your daily meals or impress guests with a feast, our blog is filled with inspiration to help you make the most of your spice collection.</p>
+        <br>
+        <h2>Join Our Community:</h2><br>
+        <p>At [Your Spice Haven], we believe that good food is meant to be shared. Join our community of spice enthusiasts, share your culinary creations, and connect with fellow foodies who share your passion for flavor.</p>
+        <p>Thank you for being a part of our spice-loving family. We invite you to explore, experiment, and savor the world of spices with us.</p>
+        <br>
+        <div class="slogan">Happy Cooking!</div>   
+        <h4>-FlavorForge Team</h4> 
+    </div>
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="small-container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <img src="Store.png" alt="Play Store and App store">
+                    <p>Download App for Android and ios Mobile Phones.</p>
+                </div>
+                <div class="footer-col-2">
+                    <img src="logo.png" alt="FlavorForge" width="80px">
+                    <p>Infuse life into your dishes with our exquisite blend of handcrafted spices, <br> elevating every bite to a symphony of flavors.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blogs</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                        <h5><img src="facebook.png" alt="Facebook" height="15px" width="15px"> <img src="instagram.png" alt="Instagram" height="15px" width="15px"> <img src="twitter.png" alt="Twitter" height="15px" width="15px"> <img src="youtube.png" alt="Youtube" height="15px" width="15px"> </h5>
+                </div>
+            </div>
+            <hr>
+                <p class="copyright">Copyright 2023 - FlavorForge</p>
+        </div>
+    </div>
+
+    <!---JS For Toggle Menu-->
+<script>
+
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+
+</script>
+
+<!--JS For Toggle Form-->
+
+<script>
+    var LoginForm = document.getElementById("LoginForm");
+    var RegForm = document.getElementById("RegForm");
+    var Indicator = document.getElementById("Indicator");
+
+    function register(){
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(75px)";
+    }
+    function login(){
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(0px)";
+    }
+
+</script>
+</body>
+</html>
